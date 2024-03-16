@@ -1,0 +1,10 @@
+* Sources
+None of these templates are my own creation.
+Cover letter: https://www.youtube.com/watch?v=UnGpiDxgaBo&t=1s
+DeveloperCV: credits are in the file.
+
+* Cover letter
+This cover letter requires the moderncv class. For example you can find it [[https://aur.archlinux.org/packages/texlive-moderncv-git][here]] for Arch. It requires a jpeg signature file to be in the folder with the name  "signature.jpg". Alternatively remove the line =\includegraphics[width=0.25\linewidth]{signature.jpg}=. To change the link color change =\textcolor{blue}= to another color. 
+
+* Developer CV
+The web developer CV requires botht the .tex file and the .cls file to work. Link colors can also be changed by update =\textcolor{blue}=.

@@ -1,0 +1,194 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Developer CV
+% LaTeX Class
+% Version 2.0 (12/10/23)
+%
+% This class originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Omar Roldan
+% Based on a template by  Jan Vorisek (jan@vorisek.me)
+% Based on a template by Jan Küster (info@jankuester.com)
+% Modified for LaTeX Templates by Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[9pt]{developercv} % Default font size, values from 8-12pt are recommended
+\usepackage{multicol}
+\setlength{\columnsep}{0mm}
+%----------------------------------------------------------------------------------------
+\usepackage{lipsum}  
+
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.5\textwidth} 
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	{\fontsize{16}{20} \textcolor{black}{\textbf{\MakeUppercase{Chris Hughes}}}} % First name
+	
+	\vspace{6pt}
+	
+	{\Large Software Developer} % Career or current job title
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.2\textwidth} % 20% of the page width for the first row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+	\icon{Globe}{11}{\href{https://chris-hughes.dev}{chris-hughes.dev}}\\ 
+    \icon{Phone}{11}{(902) 302 7225}\\
+    \icon{MapMarker}{11}{Mabou, Nova Scotia}\\
+	
+\end{minipage}
+\begin{minipage}[t]{0.27\textwidth} % 27% of the page width for the second row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	\icon{Envelope}{11}{\href{mailto:chris@chris-hughes.dev}{chris@chris-hughes.dev}}\\	
+    \icon{Github}{11}{\href{https://github.com/naokotani}{github.com/naokotani}}\\
+    
+\end{minipage}
+
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION, SKILLS AND TECHNOLOGIES
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.46\textwidth}
+    \cvsect{Summary}
+I am a web developer based in Cape Breton,
+Nova Scotia. I specialize in TypeScript, Rust, SQL, HTML/CSS,
+Node, and Nginx. Check out my \textcolor{blue}{\href{https://chris-hughes.dev/}{developer blog}} for more information about me and my projects.
+\end{minipage}
+\hfill % Whitespace between
+\begin{minipage}[t]{0.465\textwidth}
+    \cvsect{Skills}
+    \vspace{-6pt}
+    \begin{minipage}[t]{0.2\textwidth}
+        \textbf{Languages:}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.73\textwidth}
+        TypeScript, Rust, SQL, HTML, CSS, Java, C, Bash.
+    \end{minipage}
+    \vspace{4mm}
+    
+    \begin{minipage}[t]{0.2\textwidth}
+        \textbf{Technologies:}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.73\textwidth}
+PostgreSQL, SQLite, React, Linux, Svelte, Node, MongoDb, Nginx, AWS.
+    \end{minipage}
+    
+\end{minipage}
+
+%----------------------------------------------------------------------------------------
+%	Projects
+%----------------------------------------------------------------------------------------
+\cvsect{Projects}
+\begin{entrylist}
+    \entry
+		{Rust/PostgreSQL}
+		{PF2e Encounter Builder}
+		{\textcolor{blue}{\href{https://github.com/naokotani/encounter-builder}{GitHub Link}}}
+    {Explored Rust and Svelte technologies to develop a web application that dynamically generates balanced
+tabletop RPG encounters using a Rust API and a Svelte front-end.}
+    \entry
+		{TypeScript/Bun}
+		{Developer Blog}
+		{\textcolor{blue}{\href{https://github.com/naokotani/bun-blog}{GitHub Link}}}
+		{Created a light-weight blogging website using Bun, HTMX, Mustache, Sharp and Cheerio. Configured
+Nginx as a reverse proxy and for caching. Implemented simple yet effective file-system routing to explore
+built-in Bun features.}
+	\entry
+		{JavaScript/SQLite}
+		{Quizbot}
+		{\textcolor{blue}{\href{https://github.com/naokotani/quizbot}{GitHub Link}}}
+		{A discord bot that utilizes an SQLite database to store school related tasks. Users can retrieve tasks by using commands inside discord to generate dynamic queries.}
+    \entry
+		{React}
+		{Charity Website}
+		{\textcolor{blue}{\href{https://github.com/naokotani/ark-webstore}{GitHub Link}}}
+		{Gatsby website that aimed to fulfill a client need to maximize editable content. Employed a Sanity CMS
+to store data that could be easily maintained and edited by the client. Included a Shopify web store that
+could be maintained by the client via the Shopify console.}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+\vspace{-10 pt}
+\cvsect{Education}
+\begin{entrylist}
+    \entry
+		{2023 - 2024}
+		{IT Programming Diploma}
+		{NSCC}
+		{Two year program focused on software development, including web development. Covered OOP; professional practices, including AGILE and scrum; database fundamentals, including SQL; Java, C, JavaScript.}
+    \entry
+		{2014 - 2015}
+		{Continuing Education Courses in Editing}
+		{George Brown College}
+		{Took courses in copy editing, grammar, proofreading, production editing, travel writing}
+	\entry
+		{2004 - 2008}
+		{Bachelor's Degree}
+		{Trent University}
+		{Specialization in cultural anthropology with a minor in Spanish.}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE
+%----------------------------------------------------------------------------------------
+\vspace{-10 pt}
+\cvsect{Experience}
+\begin{entrylist}
+	\entry
+        {2018 -- present}
+		{Personal Support Worker}
+		{L'Arche Cape Breton}
+		{\vspace{-10pt}
+        \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+            \item Support core members over night.
+            \item Assit core members with personal care routines.
+            \item Take core members on vacations and to community events.
+        \end{itemize} 
+        \texttt{} \texttt{}}
+	\entry
+		{2016 -- 2017}
+		{Operations Manager}
+		{Algonquin Wildlife Research Center}
+		{\vspace{-10pt}
+        \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+            \item Maintenance on over 20 buildings, including electrical and plumbing.
+            \item Outdoor maintenance, including clearing trails, cutting grass, clearing trees.
+            \item Maintaining pumps, water heaters, filtration systems, septic systems.
+        \end{itemize} 
+        \texttt{} \texttt{}}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES
+%----------------------------------------------------------------------------------------
+\vspace{-10 pt}
+	\cvsect{Languages}
+    \vspace{-6pt}
+    
+    \hspace{26mm} \textbf{English} - native, \textbf{Spanish} - intermediate
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
